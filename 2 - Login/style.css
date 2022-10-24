@@ -98,6 +98,8 @@ input:active {
 #RecLogin{
 	margin: 50px 60px 50px 60px;
 	color: black;
+	background-color: white;
+	cursor: pointer;
 }
 #RecLogin: visited{
 	color: black;
