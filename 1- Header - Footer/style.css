@@ -1,0 +1,72 @@
+:root{
+
+	--color-1: #4D5059;
+	--color-2: #2E608C;
+	--color-3: #4E94BF;
+	--color-4: #F2BF80;
+	--color-5: #D9A273;
+}
+body { 
+	background-color: var(--color-3) !important;
+	font-family: "Lato", Times, serif !important;
+}
+footer{
+	border-radius: 20px 20px 0 0;
+}
+/* NAVBAR */
+
+#barra-nav{
+	background-color: var(--color-2) !important;
+	border-radius: 0 0 20px 20px;
+	box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+#navbarsExampleXxl > ul  {
+	font-size: 20px !important;
+}
+#navbarsExampleXxl > ul > li > a{
+	color: white !important;
+}
+#logo-blanco{
+	margin-left: 10px !important;
+	width: 20%;
+}
+.dropdown-menu {
+	opacity: 75%
+}
+.dropdown-menu > li > a{
+	font-weight: bold !important;
+}
+#Btn_atras > img{
+	width: 60%;
+}
+
+#Btn_salir > img{
+	width: 60%;
+}
+
+#Icon-face > img{
+	width: 1.5%;
+	margin-left: 1%;
+}
+#Icon-insta > img{
+	width: 1.5%;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) { 
+	#Btn_atras > img{
+	display: none;
+	}
+
+#Btn_salir > img{
+	width: 5%;
+	}
+#Icon-insta > img{
+	width: 4%;
+}
+#Icon-face > img{
+	width: 4%;
+}
+
+}
