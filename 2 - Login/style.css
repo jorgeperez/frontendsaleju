@@ -65,6 +65,17 @@ input:active {
 
 
 /* LOGIN */
+@keyframes cambiar{
+	0%{background-position: 0 50%;}
+	50%{background-position: 100% 50%;}
+	100%{background-position: 0 50%;}
+}
+
+#cuerpoLogin{
+	background: linear-gradient(45deg,var(--color-1),var(--color-2),var(--color-3),var(--color-4));
+	background-size: 400% 400%;
+	animation: cambiar 10s ease-in-out infinite !important;
+	}
 
 #Img_login{
 	width: 5%;
