@@ -78,16 +78,16 @@
       <div class="col ">
         <div id="divUsuarios" class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-1">
-            <h4 class="my-0 fw-normal titulosDiv">USUARIOS 🧑</h4>
+            <h4 class="my-0 fw-normal titulosDiv">USUARIOS </h4>
           </div>
           <div class="card-body">
             <ul>
               <li style=""><a href="">Crear Usuario</a></li>
-              <li><a href="">Crear Habitante             </a></li>
               <li><a href="">Crear Propietario</a></li>
               <li><a href="">Listar Usuarios</a></li>
               <li><a href="">Listar Propietarios</a></li>
-              <li><a href="">Listar Habitantes</a></li>
+              <li><a href="">&nbsp</a></li>
+              <li><a href="">&nbsp</a></li>              
             </ul>
           </div>
         </div>
@@ -95,7 +95,7 @@
       <div class="col">
         <div id="divConjuntos" class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-1">
-            <h4 class="my-0 fw-normal titulosDiv">CONJUNTOS 🏠</h4>
+            <h4 class="my-0 fw-normal titulosDiv">CONJUNTOS </h4>
           </div>
           <div class="card-body">
            <ul>
@@ -114,7 +114,7 @@
         <div class="col">
           <div id="divFacturas" class="card mb-4 rounded-3 shadow-sm">
             <div id="" class="card-header py-1">
-              <h4 class="my-0 fw-normal titulosDiv">FACTURAS 🧾</h4>
+              <h4 class="my-0 fw-normal titulosDiv">FACTURAS </h4>
             </div>
             <div class="card-body">
             <ul>
@@ -131,7 +131,7 @@
         <div class="col">
           <div id="divReportes"class="card mb-4 rounded-3 shadow-sm">
             <div class="card-header py-1">
-              <h4 class="my-0 fw-normal titulosDiv">REPORTES 📊</h4>
+              <h4 class="my-0 fw-normal titulosDiv">REPORTES </h4>
             </div>
             <div class="card-body">
               <ul id="listaReportes">
@@ -151,7 +151,7 @@
         <div class="col">
           <div id="divNotificaciones" class="card mb-4 rounded-3 shadow-sm">
             <div id="" class="card-header py-1">
-              <h4 class="my-0 fw-normal titulosDiv">NOTIFICACIONES 📤</h4>
+              <h4 class="my-0 fw-normal titulosDiv">NOTIFICACIONES </h4>
             </div>
             <div class="card-body">
               <table style="text-align: left" class="table table-striped">
@@ -178,13 +178,36 @@
               </table>
             </div>
           </div>
-          <button id="btnNuevaNot" class="btn btn-primary" type="submit">Nueva Notificación</button>
+          <button id="btnNuevaNot" class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Nueva Notificación</button>
         </div>
         
     </div>  
   </main> 
-
 </div> 
+<!-- MODAL -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Nueva Notificación</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <input type="email" class="form-control" id="InputRec" aria-describedby="emailHelp" placeholder="Email" required>
+              <textarea style="margin-top: 20px" class="form-control" placeholder="Redactar Mensaje" id="floatingTextarea"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button> 
+      </form>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
  
 <footer class="d-flex footer mt-auto py-3 bg-light">
   <div class="container">
