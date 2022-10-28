@@ -42,7 +42,7 @@ input:active {
 	width: 20%;
 }
 .dropdown-menu {
-	opacity: 75%
+	opacity: 90%
 }
 .dropdown-menu > li > a{
 	font-weight: bold !important;
@@ -114,6 +114,9 @@ input:active {
 }
 #RecLogin: visited{
 	color: black;
+}
+#btnModalRec{
+	background-color: var(--color-2);
 }
 
 

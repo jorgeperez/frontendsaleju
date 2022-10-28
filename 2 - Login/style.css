@@ -115,6 +115,9 @@ input:active {
 #RecLogin: visited{
 	color: black;
 }
+#btnModalRec{
+	background-color: var(--color-2);
+}
 
 
 /* MEDIA QUERIES */
