@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Conjuntos Formulario - Propiedad Horizontal</title>
+	<title>Propietario Formulario - Propiedad Horizontal</title>
 	<link rel="stylesheet" href="style.css">
 	<!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -75,91 +75,96 @@
     </div>
   </nav>
 </header>
-  <div id="divFormConjunto" class="container">
-    <div id="titleFormUsuario" class="titulosDivForm"><p>Formulario de Conjuntos</p></div>
-      <form id="formFormUsuario" class="col-sm-10 offset-sm-1 col-md-10 offset-md-1 Formularios">
-        <div  style="margin-top:30px !important"class="mb-3 col-md-10 offset-md-1 centrarLabels">
-          <label  for="NombreConjunto" class="form-label">Nombre del Conjunto</label>
-          <input type="text" class="form-control " id="NombreConjunto" aria-describedby="emailHelp" required>
+  <div id="divFormPropiet" class="container">
+    <div id="titleFormUsuario" class="titulosDivForm"><p>Formulario de Propietarios</p></div>
+      <form id="formFormPropiet" class="col-sm-10 offset-sm-1 col-md-10 offset-md-1 Formularios">
+        <div class="mb-3 col-md-10 offset-md-1">
+          <label for="PrimerNombrePropiet" class="form-label">Primer Nombre</label>
+          <input type="text" class="form-control " id="PrimerNombrePropiet" aria-describedby="emailHelp" required>
         </div>
-        <div class="row g-3 centrarLabels">
-
-          <div class="col">
-            <label for="nitConjunto" class="form-label">NIT</label>
-            <input type="number" class="form-control" placeholder="" aria-label=" " id="nitConjunto" required>
-          </div>          
-          <div class="col">
-            <label for="areaConjunto" class="form-label">Área</label>
-            <input type="text" class="form-control" placeholder="" aria-label=" " id="areaConjunto"required>
-          </div>
-          
-        </div>      
-       <div style="margin-top:0px" class="row g-3 centrarLabels">
-
-          <div class="col">
-            <label for="selectFormConjunto" class="form-label">Banco</label>
-             <select id="selectFormConjunto" class="form-select" aria-label="Default select example" required>
-              <option selected>Seleccionar</option>
-              <option value="1">Bancolombia</option>
-              <option value="2">Davivienda</option>
-              <option value="2">BOGOTÄ</option>
-            </select>
-          </div>          
-          <div class="col">
-            <label for="areaConjunto" class="form-label">Cuenta</label>
-            <input type="text" class="form-control" placeholder="" aria-label=" " id="areaConjunto"required>
-          </div>
-          <div class="col">
-            <label for="areaConjunto" class="form-label">Tipo</label>
-             <select id="selectFormUConjunto" class="form-select" aria-label="Default select example" required>
-              <option selected>Seleccionar</option>
-              <option value="1">De ahorros</option>
-              <option value="2">Corriente</option>
-            </select>
-          </div>
-          
+        <div class="mb-3 col-md-10 offset-md-1">
+          <label for="SegundoNombrePropiet" class="form-label">Segundo Nombre</label>
+          <input type="text" class="form-control " id="SegundoNombrePropiet">
         </div>        
-        <div style="margin-top:0px" class="row g-3 centrarLabels">
+        <div class="mb-3 col-md-10 offset-md-1">
+          <label for="PrimerApellidoPropiet" class="form-label">Primer Apellido</label>
+          <input type="text" class="form-control " id="PrimerApellidoPropiet" required>
+        </div>        
+        <div class="mb-3 col-md-10 offset-md-1">
+          <label for="SegundoApellidoUPropiet" class="form-label">Segundo Apellido</label>
+          <input type="text" class="form-control " id="SegundoApellidoUPropiet" >
+        </div>
+        <div class="mb-3 col-md-10 offset-md-1">
+          <label for="EmailPropiet" class="form-label">Email</label>
+          <input type="email" class="form-control " id="EmailPropiet" required>
+        </div>
+        <div class="row g-3">
 
-          <div class="col col-md-8">
-            <label for="nombreAdminCon" class="form-label">Nombre del Administrador</label>
-            <input type="text" class="form-control" placeholder="" aria-label=" " id="nombreAdminCon" required>
+          <div class="col">
+            <label for="docPropiet" class="form-label">Documento</label>
+            <input type="number" class="form-control" placeholder="" aria-label=" " id="docPropiet" required>
           </div>          
           <div class="col">
-            <label for="intMora" class="form-label">Interés x Mora</label>
-            <input type="text" class="form-control" placeholder="" aria-label=" " id="intMora" required>
+            <label for="celPropiet" class="form-label">Celular</label>
+            <input type="text" class="form-control" placeholder="" aria-label=" " id="celPropiet" required>
           </div>
-          
-        </div> 
-
-        <div style="margin-top:0px" class="row g-3 centrarLabels">
-
-          <div class="col">
-            <label for="inicioFact" class="form-label">Inicio de Factura</label>
-            <input type="number" class="form-control" placeholder="" aria-label=" " id="inicioFact" required>
-          </div>          
-          <div class="col">
-            <label for="presActual" class="form-label">Presupuesto Actual</label>
-            <input type="text" class="form-control" placeholder="" aria-label=" " id="presActual" required>
-          </div>
-
         </div>
 
-        <div style="margin-top:20px !important" class="row g-3">
-          <button  type="submit" id="btnCrearConjunto" class="btn btn-primary btnsEnviar col-sm-3 col-md-3  m-3">Crear</button>
-          <button  type="submit" id="btnEditarConjunto" class="btn btn-primary btnsEnviar col-sm-3 col-md-3  m-3">Editar</button>
-          <button type="submit" id="btnEliminarConjunto" class="btn btn-primary btnsEnviar col-sm-3 col-md-3  m-3">Eliminar</button>
-        </div>
-       
+        <div style="margin-top:0px" class="row g-3">
+          <button  type="submit" id="btnCrearPropiet" class="btn btn-primary btnsEnviar col-sm-3 col-md-3  m-3">Crear</button>
+          <button  type="submit" id="btnEditarPropiet" class="btn btn-primary btnsEnviar col-sm-3 col-md-3  m-3">Editar</button>
+          <button type="submit" id="btnEliminarPropiet" class="btn btn-primary btnsEnviar col-sm-3 col-md-3  m-3">Eliminar</button>
+        </div>       
       </form>
-      <form style="margin-top:20px !important" class="m-1 col-sm-10  col-md-10" role="" id="formBuscarConjunto">
+
+      <form style="margin-top:20px !important" class="m-1 col-sm-10  col-md-10" role="" id="formBuscarPropiet">
         <div class="row g-3 offset-sm-2">
           <div class="col">
           <input class="form-control me-2 " type="search" placeholder=" 🔍 Buscar por NIT" aria-label="Search" required>
-          <button style="" id="btnBuscarConjunto" class="btn success col-sm-3 col-md-3  btnsEnviar" type="submit">Buscar</button>
+          <button style="" id="btnBuscarPropiet" class="btn success col-sm-3 col-md-3  btnsEnviar" type="submit">Buscar</button>
           </div>
         </div>
-      </form>     
+      </form>   
+
+      <hr id="lineaHorizontal">
+
+      <div id="divVincularPropiet">
+       <div id="titleFormUsuario" class="titulosDivForm"><p>Vincular Propietarios</p></div>
+        <form style="margin-top:20px !important" class=" col-sm-11 col-md-12" role="" id="formBuscarPropiet">
+          <div class="row g-3 centrarLabels">
+            <div class="col">
+              <label for="selectFormVincConjunto" class="form-label letraBlanca">Nombre Conjunto</label>
+               <select id="selectFormVincConjunto" class="form-select" aria-label="Default select example" required>
+                <option selected>Seleccionar</option>
+                <option value="1">La Vecindad</option>
+                <option value="2">El Bosque</option>
+                <option value="2">Plaza Mayor</option>
+              </select>
+            </div>
+            <div class="row g-3 ">
+              <div class="col ">
+                <label for="torreVincularPropiet" class="form-label letraBlanca " >Torre</label>
+                <input type="text" class="form-control" placeholder="" aria-label=" " id="torreVincularPropiet" required>
+              </div>          
+              <div class="col">
+                <label for="inmuebleVincularPropiet" class="form-label letraBlanca">Inmueble</label>
+                <input type="text" class="form-control" placeholder="" aria-label=" " id="inmuebleVincularPropiet"required>
+              </div>              
+            </div> 
+            <div class="row g-3 ">
+              <div class="col ">
+                <label for="cedulaVincularPropiet" class="form-label letraBlanca " >Cédula Propietario</label>
+                <input type="number" class="form-control" placeholder="" aria-label=" " id="cedulaVincularPropiet" required>
+              </div>          
+              <div class="col">
+                <button type="submit" id="btnVincularPropiet" class="btn btn-primary col-sm-6 col-md-6  m-3">Vincular</button>
+
+              </div>              
+            </div> 
+          </div>
+        </form>  
+      </div> 
+
   </div>
 <footer class="d-flex footer mt-auto py-3 bg-light">
   <div class="container">
