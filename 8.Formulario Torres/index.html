@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es" class="h-100">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Torres Formulario - Propiedad Horizontal</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+</head>
+<body class="d-flex flex-column h-100">
+<header>
+    <nav id="barra-nav" class="navbar navbar-expand-md navbar-dark" aria-label="Seventh navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img id="logo-blanco" src="img/Logo-header.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleXxl" aria-controls="navbarsExampleXxl" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleXxl">
+        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownXxl" data-bs-toggle="dropdown" aria-expanded="false">Usuarios</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownXxl">
+              <li><a class="dropdown-item" href="#">Listar Usuarios</a></li>
+              <li><a class="dropdown-item" href="#">Listar Propietarios</a></li>
+              <li><a class="dropdown-item" href="#">Listar Habitantes</a></li>
+              <li><a class="dropdown-item" href="#">Crear Usuario</a></li>
+              <li><a class="dropdown-item" href="#">Crear Propietario</a></li>
+              <li><a class="dropdown-item" href="#">Crear Habitante</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownXxl" data-bs-toggle="dropdown" aria-expanded="false">Conjuntos</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownXxl">
+              <li><a class="dropdown-item" href="#">Listar Conjuntos</a></li>
+              <li><a class="dropdown-item" href="#">Listar Torres</a></li>
+              <li><a class="dropdown-item" href="#">Listar Inmuebles</a></li>
+              <li><a class="dropdown-item" href="#">Crear Conjunto</a></li>
+              <li><a class="dropdown-item" href="#">Crear Torre</a></li>
+              <li><a class="dropdown-item" href="#">Crear Inmuebles</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownXxl" data-bs-toggle="dropdown" aria-expanded="false">Facturación</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownXxl">
+              <li><a class="dropdown-item" href="#">Movimientos</a></li>
+              <li><a class="dropdown-item" href="#">Cartera</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownXxl" data-bs-toggle="dropdown" aria-expanded="false">Reportes</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownXxl">
+              <li><a class="dropdown-item" href="#">Buscar Propietario</a></li>
+              <li><a class="dropdown-item" href="#">Buscar Habitante</a></li>
+              <li><a class="dropdown-item" href="#">Historial de Pagos</a></li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <a id="Btn_atras" class="d-flex" href="#">
+          <img src="img/flecha-izquierda (1).png" alt="">
+        </a>
+        <a id="Btn_salir" class="d-flex" href="#">
+          <img src="img/eliminar.png" alt="">
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+  <div id="divFormTorres" class="container">
+    <div id="titleFormUsuario" class="titulosDivForm"><p>Formulario de Torres</p></div>
+      <form id="formFormUsuario" class="col-sm-10 offset-sm-1 col-md-10 offset-md-1 Formularios">
+        <div  style="margin-top:30px !important"class="mb-3 col-md-10 offset-md-1 ">
+          <label  for="NombreConjunto" class="form-label">Nombre del Conjunto</label>
+            <select id="selectFormTorres" class="form-select" aria-label="Default select example" required>
+              <option selected>Seleccionar</option>
+              <option value="1">El Bosque</option>
+              <option value="2">La Vecindad</option>
+              <option value="2">Magallanes</option>
+            </select>
+        </div>
+        <div style="margin-top:0px" class="row g-3 ">
+
+          <div class="col">
+            <label for="inicioFact" class="form-label">Identificador</label>
+            <input type="text" class="form-control" placeholder="" aria-label=" " id="inputIdTorres" required>
+          </div>          
+          <div class="col">
+            <label for="presActual" class="form-label">Nombre</label>
+            <input type="text" class="form-control" placeholder="" aria-label=" " id="inputNombreTorres" required>
+          </div>
+
+        </div>
+        <div style="margin-top: 20px" class="row g-3">
+
+          <label for="floatingTextarea">Descripción</label>   
+          <textarea id="txtareaTorres" class="form-control" placeholder="Deja un comentario acá" id="floatingTextarea"></textarea>
+
+        </div>
+
+        <div style="margin-top:20px !important" class="row g-3">
+          <button  type="submit" id="btnCrearConjunto" class="btn btn-primary btnsEnviar col-sm-3 col-md-3  m-3">Crear</button>
+          <button  type="submit" id="btnEditarConjunto" class="btn btn-primary btnsEnviar col-sm-3 col-md-3  m-3">Editar</button>
+          <button type="submit" id="btnEliminarConjunto" class="btn btn-primary btnsEnviar col-sm-3 col-md-3  m-3">Eliminar</button>
+        </div>
+       
+      </form>
+      <form style="margin-top:70px !important" class="m-1 col-sm-10  col-md-10" role="" id="formBuscarTorres">
+        <div class="row g-3 offset-sm-2">
+          <div class="col">
+          <input class="form-control me-2 " type="search" placeholder=" 🔍 Buscar por Identificador" aria-label="Search" required>
+          <button style="color: white" id="btnBuscarTorres" class="btn success col-sm-3 col-md-3 btnsEnviar" type="submit">Buscar</button>
+          </div>
+        </div>
+      </form>     
+  </div>
+<footer class="d-flex footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Todos los derechos reservados - 2022. Propiedad Horizontal</span>
+    <a id="Icon-face" href="#"><img src="img/facebook.png" alt="" class=""></a>
+    <a id="Icon-insta" href="#"><img src="img/instagram.png" alt="" class=""></a>
+  </div>
+</footer>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</html>
