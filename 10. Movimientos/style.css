@@ -363,7 +363,31 @@ body::-moz-scrollbar-thumb {
 	margin-bottom: 70px; 
 }
 
+/* LISTA MOVIMIENTOS */
 
+#divListaMovimientos {
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
+	height: 650px;
+	margin-top: 40px;
+	padding: 0 0 30px 0;
+	width: 900px;
+	margin-bottom: 70px; 
+}
+/*  color del icono del input tipo date */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 1;
+  filter: invert(1);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1
+}
+#tablaMovimientos{
+	width: 900px;
+}
 
 /* MEDIA QUERIES */
 
@@ -408,11 +432,15 @@ body::-moz-scrollbar-thumb {
 	margin: auto;
 	border-radius: 10px;
 }
-#divFormInmueble{
+#divFormInmueble, #divListaMovimientos{
 	width: 450px;
 
 }
-#divFormInmueble > form{
+#divFormInmueble, #divListaMovimientos > form{
 	padding: 0 15px;
 }
+#tablaMovimientos{
+	width: 400px;
+}
+
 }
