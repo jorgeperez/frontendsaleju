@@ -396,7 +396,8 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
 /* LISTA CARTERA */
 
 /* LISTA REPORTE PROPIETARIO */
-
+#inputPropReporte::-webkit-input-placeholder { color: white; } /* WebKit */
+#inputPropReporte::-moz-placeholder { color: white; } /* Firefox 19+ */
 
 /* MEDIA QUERIES */
 
