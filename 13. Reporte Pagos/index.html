@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es" class="h-100">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Reporte Pagos - Propiedad Horizontal</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+</head>
+<body class="d-flex flex-column h-100">
+<header>
+    <nav id="barra-nav" class="navbar navbar-expand-md navbar-dark" aria-label="Seventh navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img id="logo-blanco" src="img/Logo-header.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleXxl" aria-controls="navbarsExampleXxl" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleXxl">
+        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownXxl" data-bs-toggle="dropdown" aria-expanded="false">Usuarios</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownXxl">
+              <li><a class="dropdown-item" href="#">Listar Usuarios</a></li>
+              <li><a class="dropdown-item" href="#">Listar Propietarios</a></li>
+              <li><a class="dropdown-item" href="#">Listar Habitantes</a></li>
+              <li><a class="dropdown-item" href="#">Crear Usuario</a></li>
+              <li><a class="dropdown-item" href="#">Crear Propietario</a></li>
+              <li><a class="dropdown-item" href="#">Crear Habitante</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownXxl" data-bs-toggle="dropdown" aria-expanded="false">Conjuntos</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownXxl">
+              <li><a class="dropdown-item" href="#">Listar Conjuntos</a></li>
+              <li><a class="dropdown-item" href="#">Listar Torres</a></li>
+              <li><a class="dropdown-item" href="#">Listar Inmuebles</a></li>
+              <li><a class="dropdown-item" href="#">Crear Conjunto</a></li>
+              <li><a class="dropdown-item" href="#">Crear Torre</a></li>
+              <li><a class="dropdown-item" href="#">Crear Inmuebles</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownXxl" data-bs-toggle="dropdown" aria-expanded="false">Facturación</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownXxl">
+              <li><a class="dropdown-item" href="#">Movimientos</a></li>
+              <li><a class="dropdown-item" href="#">Cartera</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownXxl" data-bs-toggle="dropdown" aria-expanded="false">Reportes</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownXxl">
+              <li><a class="dropdown-item" href="#">Buscar Propietario</a></li>
+              <li><a class="dropdown-item" href="#">Buscar Habitante</a></li>
+              <li><a class="dropdown-item" href="#">Historial de Pagos</a></li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <a id="Btn_atras" class="d-flex" href="#">
+          <img src="img/flecha-izquierda (1).png" alt="">
+        </a>
+        <a id="Btn_salir" class="d-flex" href="#">
+          <img src="img/eliminar.png" alt="">
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+  <div id="divListaReportePago" class="container">
+    <div id="titleFormUsuario" class="titulosDivForm"><p>Búsqueda de Pagos</p></div>
+      <form id="formFormCartera" class="col-sm-8 offset-sm-2 col-md-8 offset-md-2 Formularios">
+        <div  style="margin-top:30px !important"class="mb-3 col-md-10 offset-md-1 ">
+          <label  for="selectFormReportePagos" class="form-label">Nombre del Conjunto</label>
+            <select id="selectFormReportePagos" class="form-select" aria-label="Default select example" required>
+              <option selected>Seleccionar</option>
+              <option value="1">El Bosque</option>
+              <option value="2">La Vecindad</option>
+              <option value="2">Magallanes</option>
+            </select>
+        </div>
+
+        <div style="margin-top:0px" class="row g-3 ">
+
+          <div class="col col-md-6">
+            <label for="selectFormTorrePago" class="form-label">Torre</label>
+            <select id="selectFormTorrePago" class="form-select" aria-label="Default select example" required>
+              <option selected>Seleccionar</option>
+              <option value="1">A1</option>
+              <option value="2">B2</option>
+              <option value="2">C3</option>
+            </select>
+          </div>
+
+          <div class="col">
+            <label for="selectFormInmuPago" class="form-label">Inmueble</label>
+            <select id="selectFormInmuPago" class="form-select" aria-label="Default select example" required>
+              <option selected>Seleccionar</option>
+              <option value="1">A1 101</option>
+              <option value="2">A1 102</option>
+              <option value="2">A3 103</option>
+            </select>
+          </div>
+
+        </div>
+
+        <div style="margin-top:20px !important; margin-bottom: 40px !important" class="col g-3">
+          <button type="submit" id="btnBuscarPagos" class="btn btn-primary btnsEnviar col-sm-6 offset-sm-3 col-md-4 offset-md-4">Buscar</button>
+        </div>       
+      </form>
+      <div  class="container col-md-11">
+        <table id="tablaPagos col-md-11" style="text-align:center" class="table table-striped table-hover table-responsive">
+          <thead style="background-color: var(--color-2); color: white">
+            <tr>
+              <th scope="col">Fecha de Pago</th>
+              <th scope="col">Forma de PagoS</th>
+              <th scope="col">Torre</th>
+              <th scope="col">Inmueble</th>
+              <th scope="col">Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>25/11/2010</td>
+              <td>Otto</td>
+              <td>Otto</td>
+              <td>Otto</td>
+              <td><a href="">👁️</a></td>
+            </tr>
+            <tr>
+              <td>25/11/2010</td>
+              <td>Thornton</td>
+              <td>Thornton</td>
+              <td>Thornton</td>
+              <td><a href="">👁️</a></td>
+            </tr>
+            <tr>
+              <td >25/11/2010</td>
+              <td>@twitter</td>
+              <td>@twitter</td>
+              <td>@twitter</td>
+              <td><a href="">👁️</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <div style="margin-top:20px !important; margin-bottom: 40px !important" class="col g-3">
+          <button type="submit" id="btnImprimirPagos" class="btn btn-primary btnsEnviar col-sm-6 offset-sm-3 col-md-4 offset-md-4">Imprimir Listado</button>
+        </div>  
+      </div>
+   
+  </div>
+<footer class="d-flex footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Todos los derechos reservados - 2022. Propiedad Horizontal</span>
+    <a id="Icon-face" href="#"><img src="img/facebook.png" alt="" class=""></a>
+    <a id="Icon-insta" href="#"><img src="img/instagram.png" alt="" class=""></a>
+  </div>
+</footer>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</html>
